@@ -1,7 +1,7 @@
 import AboutImg from "../assets/Tours1.jpg"
-import Hero from "../component/Hero"
-import Navbar from "../component/Navbar"
-import Tour from "../component/Tour.jsx"
+import Hero from "../component/Hero.jsx"
+import Navbar from "../component/Navbar.jsx"
+import TourList from "../component/TourList.jsx"
 import Footer from "../component/Footer.jsx"
 
 export default function Tours(){
@@ -14,7 +14,7 @@ export default function Tours(){
             heroImg={AboutImg}
             btnClass='hide'
             />
-            <Tour></Tour>
+            <TourList/>
             <Footer/>
 
 

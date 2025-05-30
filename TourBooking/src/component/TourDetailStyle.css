@@ -1,0 +1,134 @@
+.tour-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.tour-title-full {
+  font-size: 2.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #012b31;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.5rem;
+}
+
+/* Infinite scroll carousel */
+.scroll-container {
+  display: flex;
+  overflow: hidden;
+}
+
+.scroll-item.large {
+  flex: 0 0 auto;
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 1rem;
+  transition: transform 0.3s;
+}
+
+/* Content section: description and includes side by side */
+.tour-content {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Shared card styles */
+.tour-description-box,
+.tour-includes-box {
+  flex: 1;
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Accent bar on the left of cards */
+.tour-description-box::before,
+.tour-includes-box::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 6px;
+  height: 100%;
+  background: linear-gradient(180deg, #01959a, #012b31);
+}
+
+.tour-description-box h3,
+.tour-includes-box h3 {
+  margin-top: 0;
+  color: #012b31;
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+  padding-left: 0.5rem;
+}
+
+.tour-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-top: 0;
+  padding-left: 0.5rem;
+  text-align: left;
+}
+
+/* Styled list for includes */
+.tour-includes-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.include-item {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 0.75rem;
+  padding-left: 0.5rem;
+}
+
+.include-item::before { 
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  margin-right: 0.75rem;
+  color: #01959a;
+}
+
+
+
+/* Responsive adjustments */
+@media screen and (max-width: 480px) {
+  .scroll-item.large {
+    width: 300px;
+    height: 220px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .scroll-item.large {
+    width: 300px;
+    height: 220px;
+  }
+  .tour-content {
+    flex-direction: column;
+  }
+  .tour-description-box,
+  .tour-includes-box {
+    padding: 1rem;
+    border-radius: 8px;
+  }
+}
