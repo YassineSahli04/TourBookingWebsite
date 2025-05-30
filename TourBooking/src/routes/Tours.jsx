@@ -1,10 +1,21 @@
+import AboutImg from "../assets/Tours1.jpg"
+import Hero from "../component/Hero"
 import Navbar from "../component/Navbar"
+import Tour from "../component/Tour.jsx"
 
 export default function Tours(){
     return(
         <>
-            <Navbar></Navbar>
-            <h1>This is Home Tours</h1>
+            <Navbar/>
+            <Hero 
+            title="Start Your Journey"
+            cName="hero-mid"
+            heroImg={AboutImg}
+            btnClass='hide'
+            />
+            <Tour></Tour>
+
+
         </>
     )
 }

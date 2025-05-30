@@ -48,7 +48,7 @@
 }
 
 .nav-links:hover{
-    background-color: #01959a;
+    background-color: #5f838c;
     color: #fff;
     border-radius: 4px;
     transition: all 0.2s ease-in-out ;
@@ -113,7 +113,7 @@ a:visited {
     padding: 2rem 0;
   }
   .nav-links:hover{
-    background: #01959a;
+    background: #5f838c;
     transition: none;
   }
 
