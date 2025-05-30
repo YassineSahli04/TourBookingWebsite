@@ -2,6 +2,7 @@ import AboutImg from "../assets/Tours1.jpg"
 import Hero from "../component/Hero"
 import Navbar from "../component/Navbar"
 import Tour from "../component/Tour.jsx"
+import Footer from "../component/Footer.jsx"
 
 export default function Tours(){
     return(
@@ -14,6 +15,7 @@ export default function Tours(){
             btnClass='hide'
             />
             <Tour></Tour>
+            <Footer/>
 
 
         </>

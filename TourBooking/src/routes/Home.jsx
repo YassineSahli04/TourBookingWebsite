@@ -2,6 +2,7 @@ import Navbar from "../component/Navbar"
 import Hero from "../component/Hero"
 import Destination from "../component/Destination"
 import HomeImg from '../assets/HomePage.jpg'
+import Footer from "../component/Footer"
 export default function Home(){
     const props = {
         title:''
@@ -22,6 +23,7 @@ export default function Home(){
             url="/"
             />
             <Destination/>
+            <Footer/>
         </>
     )
 }
