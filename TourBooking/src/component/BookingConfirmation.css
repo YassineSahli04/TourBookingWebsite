@@ -1,0 +1,132 @@
+/* src/components/BookingConfirmation.css */
+
+.booking-confirmation-wrapper {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.loading-text {
+  text-align: center;
+  margin-top: 2rem;
+  color: #555;
+  font-size: 1rem;
+}
+
+/* Titre principal centré */
+.confirmation-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #01959a;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+/* Carte de confirmation */
+.confirmation-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+}
+
+/* Titre du tour aligné à gauche */
+.tour-title {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+  font-size: 1.5rem;
+  color: #012b31;
+  font-weight: 500;
+  text-align: left;
+}
+
+/* Conteneur pour les deux boîtes de dates */
+.date-boxes {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+/* Style de chaque boîte de date */
+.date-box {
+  flex: 1;
+  background: #f0fdf9;     /* léger vert pastel */
+  border: 1px solid #c6f7e2;
+  border-radius: 6px;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+/* Labels de date en gras */
+.date-label {
+  display: block;
+  font-weight: 600;
+  color: #012b31;
+  margin-bottom: 0.25rem;
+}
+
+/* Valeurs de date */
+.date-value {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Chaque ligne sous forme de label/value alignés à gauche */
+.confirmation-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;  /* plus d’espace entre les lignes */
+}
+
+.confirmation-row .label {
+  font-weight: 600;
+  color: #012b31;
+}
+
+.confirmation-row .value {
+  color: #333;
+  text-align: right;
+}
+
+/* Note de confirmation alignée à gauche, avec plus d’interlignage */
+.confirmation-note {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  color: #555;
+  text-align: left;
+  line-height: 1.6;    /* augmente l’espacement entre lignes */
+}
+
+/* Bouton Retour */
+.btn-primary {
+  display: block;
+  width: 100%;
+  margin-top: 0.75rem;
+  background-color: #01959a;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #017f7a;
+}
+
+/* Responsive : empilement des lignes si écran étroit */
+@media screen and (max-width: 480px) {
+  .date-boxes {
+    flex-direction: column;
+  }
+  .confirmation-row {
+    flex-direction: column;
+  }
+  .confirmation-row .value {
+    margin-top: 0.25rem;
+    text-align: left;
+  }
+}

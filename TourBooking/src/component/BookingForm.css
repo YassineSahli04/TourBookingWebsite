@@ -1,0 +1,142 @@
+/* src/components/BookingForm.css */
+
+.booking-form-wrapper {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Header with Tour Title */
+.booking-form-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.booking-form-header h1 {
+  margin: 0;
+  color: #012b31;
+  font-size: 1.75rem;
+}
+
+/* ─── Shared Form Layout ─── */
+.booking-form .form-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.booking-form .form-row.single {
+  display: block;  /* full-width single column */
+}
+
+.booking-form .half {
+  flex: 1;
+}
+
+.booking-form .full {
+  flex: 1;
+}
+
+/* Labels */
+.booking-form .form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: #012b31;
+}
+
+/* Inputs */
+.booking-form .form-group input[type='text'],
+.booking-form .form-group input[type='email'],
+.booking-form .form-group input[type='date'],
+.booking-form .form-group input[type='tel'] {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Checkbox Row */
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.checkbox-row input[type='checkbox'] {
+  margin-right: 0.5rem;
+  transform: scale(1.1);
+}
+
+.checkbox-label {
+  font-size: 0.9rem;
+  font-weight: 400;    /* lighter font */
+  color: #555;
+}
+
+/* Price Box */
+.price-box {
+  margin: 2rem 0 1.5rem 0;
+  padding: 1rem;
+  background-color: #f0fdf9;  /* light pastel green */
+  border: 1px solid #c6f7e2;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.price-box strong {
+  color: #01959a;
+}
+
+/* Buttons */
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+
+.button-row button {
+  flex: 1;                      /* Both buttons share the same width */
+  padding: 0.6rem 0;            /* Top/bottom padding only; width expands via flex */
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background-color: #01959a;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: #017f7a;
+}
+
+
+
+/* ─── Responsive ─── */
+@media screen and (max-width: 480px) {
+  .booking-form .form-row {
+    flex-direction: column;
+  }
+  .button-row {
+    flex-direction: column;
+  }
+  .button-row button {
+    width: 100%;
+  }
+}

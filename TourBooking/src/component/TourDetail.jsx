@@ -1,9 +1,10 @@
 import './TourDetailStyle.css';
-import SaharaHotel1 from "../assets/SaharaHotel1.webp"
 import { useRef, useEffect } from 'react';
 
+
+
 export default function TourDetail({tour}){
-  const containerRef = useRef(null);
+   const containerRef = useRef(null);
 
   useEffect(() => {
     const container = containerRef.current;

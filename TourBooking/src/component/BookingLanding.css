@@ -1,0 +1,119 @@
+/* src/pages/BookingLanding.css */
+
+.booking-landing {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+.booking-landing h1 {
+  text-align: center;
+  color: #012b31;
+  margin-bottom: 1.5rem;
+}
+
+/* ─── Shared Form Styles ─── */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #012b31;
+}
+
+select,
+input[type='date'],
+input[type='number'] {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* ─── Full-width Tour Dropdown ─── */
+.full-width {
+  width: 100%;
+}
+
+/* ─── Two‐column layout for date/time and guests/end-date ─── */
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.half {
+  flex: 1;
+}
+
+/* ─── FEATURE BOX (optional) ─── */
+.booking-features {
+  background: #e6f9f2;      /* very light green */
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.booking-features ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.booking-features li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+}
+
+.booking-features li:last-child {
+  margin-bottom: 0;
+}
+
+.check-icon {
+  color: #01959a;
+  font-size: 1.1rem;
+  margin-right: 0.5rem;
+  line-height: 1.2;
+}
+
+.feature-link {
+  color: #01959a;
+  text-decoration: underline;
+}
+
+.feature-link:hover {
+  color: #017f7a;
+}
+
+/* ─── BUTTON ─── */
+.btn-primary {
+  display: inline-block;
+  margin: 1.5rem auto 0 auto;
+  background-color: #01959a;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #017f7a;
+}
+
+/* ─── RESPONSIVE ADJUSTMENT ─── */
+@media screen and (max-width: 480px) {
+  .form-row {
+    flex-direction: column;
+  }
+}
