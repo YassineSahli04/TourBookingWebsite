@@ -1,4 +1,4 @@
-import AboutImg from "../assets/Anantara1.webp"
+import DefaultImage from "../assets/LacSunset(7,5).jpg"
 import Hero from "../component/Hero.jsx"
 import Navbar from "../component/Navbar.jsx"
 import Footer from "../component/Footer.jsx"
@@ -18,7 +18,7 @@ export default function TourDetailPage(props){
             <Hero 
             title=""
             cName="hero-mid"
-            heroImg={AboutImg}
+            heroImg={!tour ? DefaultImage:tour.detailsHeaderImage}
             btnClass='hide'
             />
             <div>

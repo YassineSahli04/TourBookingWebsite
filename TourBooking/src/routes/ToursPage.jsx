@@ -11,7 +11,7 @@ export default function Tours(){
             <Hero 
             title="Start Your Journey"
             cName="hero-mid"
-            heroImg={AboutImg}
+            heroImg="https://images.unsplash.com/photo-1645735835752-1d608d15ce20?q=80&w=2146&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             btnClass='hide'
             />
             <TourList/>

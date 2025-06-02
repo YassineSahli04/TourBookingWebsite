@@ -1,5 +1,14 @@
 .tour{
-    margin: 4rem 6rem;
+display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 70%;
+  margin: 2rem auto;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 
 }
 
@@ -7,11 +16,6 @@
     font-size: 3rem;
 }
 
-.tourcard{
-    margin-top: 3rem;
-    display: flex;
-    justify-content: space-between;
-}
 
 .t-card{
     width: 32%;
@@ -44,10 +48,22 @@
     padding: 0.9rem 0 0.2rem 0;
 }
 
-@media screen and (max-width:850px){
-    .tour{
-        margin: 4rem 2rem;
+.scroll-item-card.large-card {
+  flex: 0 0 auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 1rem;
+  transition: transform 0.3s;
+}
 
+
+@media screen and (max-width:850px){
+    .scroll-item-card.large-card {
+        width: 300px;
+    }
+    .tour{
+        margin: 0;
+        max-width: 100%;
     }
     .tourcard{
         flex-direction: column;
