@@ -1,0 +1,32 @@
+.book-page {
+  display: flex;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+.book-page .book-content {
+  flex: 1;
+  display: flex;
+  align-items: center; /* center vertically if you like */
+}
+
+.booking-images-scroll-container {
+  display: flex;
+  overflow: hidden;
+  flex: 1;
+  align-items: center;
+}
+
+.booking-images-scroll-item.booking-images-large {
+  flex: 0 0 auto;
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 10rem 1rem;
+  transition: transform 0.3s;
+}

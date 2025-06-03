@@ -39,80 +39,68 @@ export default function BookingConfirmation({ bookingData: bookingDataProp }) {
 
   return (
     <div className="booking-confirmation-wrapper">
-      {/* Titre centré */}
       <h1 className="confirmation-title">Booking Confirmed!</h1>
 
-      {/* Conteneur principal */}
       <div className="confirmation-card">
-        {/* Titre du tour, aligné à gauche */}
         <h2 className="tour-title">{details.tour.title}</h2>
 
-        {/* Dates dans deux boîtes côte à côte */}
         <div className="date-boxes">
           <div className="date-box">
-            <span className="date-label">Date de venue</span>
+            <span className="date-label">Arrival Date</span>
             <span className="date-value">{details.startDate}</span>
           </div>
           <div className="date-box">
-            <span className="date-label">Date de départ</span>
+            <span className="date-label">Departure Date</span>
             <span className="date-value">{details.endDate}</span>
           </div>
         </div>
 
-        {/* Heure et nombre de participants, alignés à gauche avec espacement */}
         <div className="confirmation-row">
-          <span className="label">Heure :</span>
+          <span className="label">Time:</span>
           <span className="value">{details.time}</span>
         </div>
 
         <div className="confirmation-row">
-          <span className="label">Nombre de participants :</span>
+          <span className="label">Number of Guests:</span>
           <span className="value">{details.guests}</span>
         </div>
 
-        {/* Nom */}
         <div className="confirmation-row">
-          <span className="label">Nom :</span>
+          <span className="label">Name:</span>
           <span className="value">
             {details.firstName} {details.lastName}
           </span>
         </div>
 
-        {/* Email */}
         <div className="confirmation-row">
-          <span className="label">Email :</span>
+          <span className="label">Email:</span>
           <span className="value">{details.email}</span>
         </div>
 
-        {/* Date de naissance, si présente */}
         {details.dateOfBirth && (
           <div className="confirmation-row">
-            <span className="label">Date de naissance :</span>
+            <span className="label">Date of Birth:</span>
             <span className="value">{details.dateOfBirth}</span>
           </div>
         )}
 
-        {/* Téléphone, si présent */}
         {details.phone && (
           <div className="confirmation-row">
-            <span className="label">Téléphone :</span>
+            <span className="label">Phone:</span>
             <span className="value">{details.phone}</span>
           </div>
         )}
 
-        {/* Prix */}
         <div className="confirmation-row">
-          <span className="label">Prix :</span>
+          <span className="label">Price:</span>
           <span className="value">${details.tour.price}</span>
         </div>
 
-        {/* Texte de confirmation aligné à gauche avec plus d’espacement */}
         <p className="confirmation-note">
-          Une confirmation a été envoyée à <em>{details.email}</em>.<br/>
-          Merci d’avoir réservé avec nous !
+          A confirmation email has been sent to <em>{details.email}</em>.<br />
+          Thank you for booking with us!
         </p>
 
-        {/* Bouton de retour */}
         <button
           className="btn-primary"
           onClick={() => {
@@ -121,7 +109,7 @@ export default function BookingConfirmation({ bookingData: bookingDataProp }) {
             navigate('/');
           }}
         >
-          Retour à l'accueil
+          Back to Home
         </button>
       </div>
     </div>

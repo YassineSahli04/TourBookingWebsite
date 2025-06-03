@@ -126,4 +126,7 @@
     padding: 1rem;
     border-radius: 8px;
   }
+  .tour-title-full {
+  font-size: 1.5rem;
+}
 }
