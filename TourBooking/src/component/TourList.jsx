@@ -23,7 +23,7 @@ export default function TourList() {
 
   return (
     <div className="tour">
-      <h1>Available Trips</h1>
+      <h1>Available Tours</h1>
         <div className="scroll-container"  ref={scrollContainer}>
           {[...ToursData, ...ToursData].map((item) => (
             <TourCard

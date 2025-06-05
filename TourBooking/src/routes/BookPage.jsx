@@ -50,7 +50,7 @@ export default function Book(){
             <Navbar/>
                         
             <Hero 
-            title="Behind The Journey"
+            title="Secure Your Next Journey"
             cName="hero-mid"
             heroImg={BookHeaderImg}
             btnClass='hide'

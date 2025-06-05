@@ -42,7 +42,9 @@ export default function BookingConfirmation({ bookingData: bookingDataProp }) {
       <h1 className="confirmation-title">Booking Confirmed!</h1>
 
       <div className="confirmation-card">
-        <h2 className="tour-title">{details.tour.title}</h2>
+        <div className="booking-form-header">
+          <h1>{details.tour.title}</h1>
+        </div>
 
         <div className="date-boxes">
           <div className="date-box">

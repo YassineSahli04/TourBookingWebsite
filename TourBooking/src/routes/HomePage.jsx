@@ -14,7 +14,7 @@ export default function Home(){
             text="Choose Your Favorite Destination."
             cName="hero"
             heroImg={HomeImg}
-            btnText="Travel Plan"
+            btnText="Tour Plan"
             btnClass="show"
             url="/tours"
             />

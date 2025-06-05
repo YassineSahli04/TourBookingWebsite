@@ -1,5 +1,4 @@
 import "./NavBarStyle.css";
-import React from "react";
 import { Link } from 'react-router-dom';
 import { MenuItems } from "./MenuItems";
 import { useState, useEffect } from "react";
