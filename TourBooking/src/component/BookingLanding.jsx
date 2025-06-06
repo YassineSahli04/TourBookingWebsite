@@ -61,6 +61,7 @@ export default function BookingLanding({ onNext }) {
         <div className="form-group half">
           <label htmlFor="start-date-input">Start Date</label>
           <input
+            lang='en'
             id="start-date-input"
             type="date"
             value={startDate}
@@ -99,6 +100,7 @@ export default function BookingLanding({ onNext }) {
         <div className="form-group half">
           <label htmlFor="end-date-input">End Date</label>
           <input
+            lang='en'
             id="end-date-input"
             type="date"
             value={endDate}
