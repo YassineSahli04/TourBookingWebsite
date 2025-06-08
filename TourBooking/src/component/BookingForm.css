@@ -1,4 +1,4 @@
-/* src/components/BookingForm.css */
+
 
 .booking-form-wrapper {
   max-width: 600px;
@@ -9,7 +9,6 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-/* Header with Tour Title */
 .booking-form-header {
   text-align: center;
   margin-bottom: 1.5rem;
@@ -21,7 +20,6 @@
   font-size: 1.75rem;
 }
 
-/* ─── Shared Form Layout ─── */
 .booking-form .form-row {
   display: flex;
   gap: 1rem;
@@ -29,7 +27,7 @@
 }
 
 .booking-form .form-row.single {
-  display: block;  /* full-width single column */
+  display: block; 
 }
 
 .booking-form .half {
@@ -39,8 +37,6 @@
 .booking-form .full {
   flex: 1;
 }
-
-/* Labels */
 .booking-form .form-group label {
   display: block;
   font-weight: 600;
@@ -48,7 +44,6 @@
   color: #012b31;
 }
 
-/* Inputs */
 .booking-form .form-group input[type='text'],
 .booking-form .form-group input[type='email'],
 .booking-form .form-group input[type='date'],
@@ -61,7 +56,6 @@
   box-sizing: border-box;
 }
 
-/* Checkbox Row */
 .checkbox-row {
   display: flex;
   align-items: center;
@@ -75,15 +69,14 @@
 
 .checkbox-label {
   font-size: 0.9rem;
-  font-weight: 400;    /* lighter font */
+  font-weight: 400;  
   color: #555;
 }
 
-/* Price Box */
 .price-box {
   margin: 2rem 0 1.5rem 0;
   padding: 1rem;
-  background-color: #f0fdf9;  /* light pastel green */
+  background-color: #f0fdf9; 
   border: 1px solid #c6f7e2;
   border-radius: 6px;
   text-align: center;
@@ -94,7 +87,6 @@
   color: #01959a;
 }
 
-/* Buttons */
 .button-row {
   display: flex;
   justify-content: space-between;
@@ -103,8 +95,8 @@
 }
 
 .button-row button {
-  flex: 1;                      /* Both buttons share the same width */
-  padding: 0.6rem 0;            /* Top/bottom padding only; width expands via flex */
+  flex: 1;                    
+  padding: 0.6rem 0;     
   font-size: 1rem;
   border-radius: 4px;
   cursor: pointer;
@@ -127,8 +119,6 @@
 }
 
 
-
-/* ─── Responsive ─── */
 @media screen and (max-width: 480px) {
   .booking-form .form-row {
     flex-direction: column;

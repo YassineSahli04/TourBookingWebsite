@@ -55,7 +55,6 @@
   overflow: hidden;
 }
 
-/* Accent bar on the left of cards */
 .tour-description-box::before,
 .tour-includes-box::before {
   content: '';
@@ -84,8 +83,6 @@
   padding-left: 0.5rem;
   text-align: left;
 }
-
-/* Styled list for includes */
 .tour-includes-list {
   list-style: none;
   padding: 0;
@@ -109,8 +106,6 @@
 }
 
 
-
-/* Responsive adjustments */
 
 
 @media screen and (max-width: 768px) {

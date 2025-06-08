@@ -1,5 +1,5 @@
-// src/components/BookingConfirmation.jsx
-import React, { useEffect, useState } from 'react';
+
+import  { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ToursData } from './ToursData';
 import './BookingConfirmation.css';
@@ -26,7 +26,6 @@ export default function BookingConfirmation({ bookingData: bookingDataProp }) {
           return;
         }
       } catch (e) {
-        // ignore parse errors
       }
     }
 

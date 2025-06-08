@@ -1,4 +1,4 @@
-// src/components/BookingForm.jsx
+
 import  { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ToursData } from './ToursData';
@@ -8,7 +8,6 @@ export default function BookingForm({ landingData, onNext, onBack }) {
   const navigate = useNavigate();
   const [tour, setTour] = useState(null);
 
-  // Personal info:
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');

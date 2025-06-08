@@ -1,4 +1,3 @@
-/* src/components/BookingConfirmation.css */
 
 .booking-confirmation-wrapper {
   max-width: 600px;
@@ -13,7 +12,6 @@
   font-size: 1rem;
 }
 
-/* Titre principal centré */
 .confirmation-title {
   text-align: center;
   font-size: 2rem;
@@ -22,7 +20,6 @@
   font-weight: 600;
 }
 
-/* Carte de confirmation */
 .confirmation-card {
   background-color: #ffffff;
   border-radius: 8px;
@@ -30,7 +27,6 @@
   padding: 1.5rem;
 }
 
-/* Titre du tour aligné à gauche */
 .tour-title {
   margin-top: 0;
   margin-bottom: 1.25rem;
@@ -40,24 +36,20 @@
   text-align: left;
 }
 
-/* Conteneur pour les deux boîtes de dates */
 .date-boxes {
   display: flex;
   gap: 1rem;
   margin-bottom: 1.25rem;
 }
 
-/* Style de chaque boîte de date */
 .date-box {
   flex: 1;
-  background: #f0fdf9;     /* léger vert pastel */
+  background: #f0fdf9; 
   border: 1px solid #c6f7e2;
   border-radius: 6px;
   padding: 0.75rem;
   text-align: left;
 }
-
-/* Labels de date en gras */
 .date-label {
   display: block;
   font-weight: 600;
@@ -65,17 +57,15 @@
   margin-bottom: 0.25rem;
 }
 
-/* Valeurs de date */
 .date-value {
   font-size: 1rem;
   color: #333;
 }
 
-/* Chaque ligne sous forme de label/value alignés à gauche */
 .confirmation-row {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1rem;  /* plus d’espace entre les lignes */
+  margin-bottom: 1rem; 
 }
 
 .confirmation-row .label {
@@ -88,17 +78,15 @@
   text-align: right;
 }
 
-/* Note de confirmation alignée à gauche, avec plus d’interlignage */
 .confirmation-note {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   font-size: 0.95rem;
   color: #555;
   text-align: left;
-  line-height: 1.6;    /* augmente l’espacement entre lignes */
+  line-height: 1.6;  
 }
 
-/* Bouton Retour */
 .btn-primary {
   display: block;
   width: 100%;
@@ -117,7 +105,6 @@
   background-color: #017f7a;
 }
 
-/* Responsive : empilement des lignes si écran étroit */
 @media screen and (max-width: 480px) {
   .date-boxes {
     flex-direction: column;

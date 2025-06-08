@@ -1,3 +1,4 @@
+/* Base layout */
 .book-page {
   display: flex;
   gap: 2rem;
@@ -7,26 +8,50 @@
   background: #ffffff;
   border-radius: 12px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
 }
+
 .book-page .book-content {
-  flex: 1;
+  flex: 1 1 100%;
   display: flex;
-  align-items: center; /* center vertically if you like */
+  justify-content: center;
+  align-items: center;
 }
 
 .booking-images-scroll-container {
   display: flex;
   overflow: hidden;
-  flex: 1;
-  align-items: center;
 }
 
 .booking-images-scroll-item.booking-images-large {
   flex: 0 0 auto;
-  width: 500px;
-  height: 400px;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  max-height: 400px;
   object-fit: cover;
   border-radius: 8px;
-  margin: 10rem 1rem;
+  margin: 2rem 1rem;
   transition: transform 0.3s;
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+  .book-page {
+    flex-wrap: nowrap;
+  }
+
+  .book-page .book-content {
+    flex: 1;
+  }
+
+  .booking-images-scroll-container {
+    flex: 1;
+  }
+
+  .booking-images-scroll-item.booking-images-large {
+    width: 500px;
+    height: 400px;
+    margin: 10rem 1rem;
+  }
 }

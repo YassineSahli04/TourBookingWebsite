@@ -1,4 +1,4 @@
-// src/pages/BookingLanding.jsx
+
 import { useState, useEffect } from 'react';
 import { ToursData } from './ToursData';
 import './BookingLanding.css';
@@ -12,7 +12,6 @@ export default function BookingLanding({ onNext }) {
   const [time, setTime] = useState('10:00');
   const [guests, setGuests] = useState(1);
 
-  // Clear any previous booking data on mount
   useEffect(() => {
     sessionStorage.removeItem('bookingLanding');
     sessionStorage.removeItem('bookingPersonal');
